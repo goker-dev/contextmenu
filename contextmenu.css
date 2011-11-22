@@ -1,0 +1,44 @@
+/* CONTEXTMENU
+==============================================================================*/
+#contextmenu {
+    min-width: 160px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+}
+#contextmenu a, #contextmenu a:visited {
+    display: block;
+    margin: 0 5px;
+    padding: 8px 10px;
+    color: #555;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e3e3e3;
+    text-decoration: none;  
+}
+#contextmenu a:first-child {
+    border-top: 0;
+}
+#contextmenu a:last-child {
+    border-bottom: 0;
+}
+#contextmenu a:hover, #contextmenu a:focus {
+    color: #333;
+}
+/* CONTEXTMENU DARK
+------------------------------------------------------------------------------*/
+#contextmenu.dark {
+    min-width: 160px;
+    border: 1px solid #333;
+    background: #343434;
+}
+#contextmenu.dark a, #contextmenu.dark a:visited {
+    display: block;
+    margin: 0 5px;
+    padding: 8px 10px;
+    color: #7d7d7d;
+    border-top: 1px solid #393838;
+    border-bottom: 1px solid #2c2b2b;
+    text-decoration: none;
+}
+#contextmenu.dark a:hover, #contextmenu.dark a:focus {
+    color: #d2d2d2;
+}

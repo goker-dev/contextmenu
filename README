@@ -1,0 +1,15 @@
+contextmenu is a context menu (right click menu) jQuery plug-in.
+
+I developed it to use on my Uygulama project's new version.
+
+I've only tested it on 
+  * Chromium (14.0.835.202), 
+  * Google Chrome (15.0.874.120), 
+  * Mozilla Firefox (3.6.17), 
+  * Opera (11.52) 
+and it works enough for me for now!
+
+It is under MIT License.
+
+
+goker.cebeci, the developer

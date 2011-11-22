@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8" />
+        <title>contextmenu</title>
+        <meta name="description" content="contextmenu is a context menu (right click menu) jQuery plug-in." />
+        <meta name="keywords" content="contextmenu, context menu, right click menu, jquery context, jquery plug-in" />
+        <link type="text/plain" rel="author" href="http://gokercebeci.com/humans.txt" />
+        <link rel="shortcut icon" href="http://gokercebeci.com/favicon.ico" type="image/x-icon" />
+        <style>
+            body { margin: 0; padding: 0; color:#333; font: normal 13px/1.264 sans-serif; }
+            #devcontainer { margin: 20px auto; padding: 0 10px; width: 940px; }
+            .codeblock {
+                margin: 5px 0;
+                padding:10px;
+                color: #ddd;
+                border: 2px solid #000;
+                background: #333;
+            }
+            .codeblock p{padding-top:10px; }
+            #area { float:left; width: 460px; }
+            .desc { float:right; width: 460px; }
+            .signature a { color:#555; text-decoration:none; }
+            .signature img { margin-right:5px; vertical-align: middle; }
+        </style>
+        <!-- jquery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="devcontainer">
+            <!-- development area -->
+
+            <style>
+                #area { 
+                    float: left; 
+                    width: 460px;
+                }
+                .menu-area, .menu-area-dark {
+                    margin-top: 20px;
+                    padding: 10px;
+                    height: 180px; 
+                    border: 1px solid #ddd;
+                    background: #e5e5e5; 
+                }
+            </style>
+            <!-- DESCRIPTION -->
+            <div class="desc">
+                <h1>CONTEXTMENU</h1>
+                <hr>
+                <p><b>contextmenu</b> is a context menu (right click menu) jQuery plug-in.</p>
+                <p>I developed it to use on my <a href="http://uygulama.net" title="uygulama">Uygulama</a> project's new version.</p>
+                <p>I've only tested it on</p>
+                <ul>
+                    <li><b>Chromium (14.0.835.202)</b>, </li>
+                    <li><b>Google Chrome (15.0.874.120)</b>, </li>
+                    <li><b>Mozilla Firefox (3.6.17)</b>, </li>
+                    <li><b>Opera (11.52)</b> </li>
+                </ul>
+                <p>and it works enough for me for now!</p>
+                <p>It is under MIT License.</p>
+                <p class="signature"><a href="http://gokercebeci.com/dev/" title="developer">
+                        <img src="http://geticon.org/of/gokercebeci.com" alt="developer" />
+                        goker.cebeci, the developer</a></p>
+                <p class="signature"><a href="https://github.com/gokercebeci/contextmenu">
+                        <img src="http://geticon.org/of/github.com" alt="github" />
+                        download or fork it on github</a></p>
+                <p class="signature"><a href="http://plugins.jquery.com/project/contextmenu">
+                        <img src="http://geticon.org/of/jquery.com" alt="jquery" />
+                        jquery plugin page</a></p>
+                <br/>
+                <h3>USAGE</h3>
+                <div class="codeblock">
+                    <code>
+                        &lt;script src="contextmenu.js"&gt&lt;/script&gt;<br/>
+                        &lt;link rel="stylesheet" href="contextmenu.css" /&gt;<br/>
+                        &lt;script&gt;<br/>
+                        &nbsp;&nbsp;$(document).contextmenu({<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;menu: {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'custom link' : 'http://...'<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                        &nbsp;&nbsp;});<br/>
+                        &lt;/script&gt;
+                    </code>
+                </div>
+                <h3>OPTIONS</h3>
+                <div class="codeblock">
+                    <ul>
+                        <li><code><b>init</b> : Optional init function.</code></li>
+                        <li><code><b>start </b> : Optional start function</code></li>
+                        <li><code><b>finish </b> : Optional finish function.</code></li>
+                        <li><code><b>style </b> : Optional class name.</code></li>
+                        <li><code><b>menu </b> : Required menu object.</code></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /DESCRIPTION -->
+
+            <div id="area">
+                <h3>CONTEXTMENU</h3>
+                <div class="menu-area">
+                    right-click here to show context menu
+                </div>
+                <div class="clear"></div>
+
+                <h3>CONTEXTMENU DARK</h3>
+
+                <div class="menu-area-dark">
+                    right-click here to show context menu dark
+                </div>
+                <div class="clear"></div>
+
+            </div>
+
+            <script src="contextmenu.js"></script>
+            <link rel="stylesheet" href="contextmenu.css" />
+            <script>
+                $('.menu-area').contextmenu({
+                    'menu':{
+                        'custom link':'#custom-link',
+                        'custom link 2':'#custom-link',
+                        'contextmenu v1.00':'http://gokercebeci.com/dev/contextmenu'
+                    }
+                });
+                $('.menu-area-dark').contextmenu({
+                    'style':'dark',
+                    'menu':{
+                        'custom link':'#custom-link',
+                        'custom link 2':'#custom-link',
+                        'custom link 3':'#custom-link',
+                        'contextmenu v1.00':'http://gokercebeci.com/dev/contextmenu'
+                    }
+                });
+            </script>
+
+            <!-- /development area -->
+        </div>
+    </body>
+</html> 
