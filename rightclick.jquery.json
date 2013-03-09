@@ -1,0 +1,36 @@
+{
+    "name": "rightclick",
+    "title": "jQuery Context Menu",
+    "description": "jQuery plugin for a context menu (right click menu)",
+    "keywords": [
+        "context",
+        "menu",
+        "contextmenu",
+        "right",
+        "click",
+        "rightclick"
+    ],
+    "version": "1.1.1",
+    "author": {
+        "name": "goker.cebeci"
+    },
+    "maintainers": [
+        {
+            "name": "Goker Cebeci",
+            "url": "http://gokercebeci.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/gokercebeci/contextmenu/LICENSE.md"
+        }
+    ],
+    "bugs": "https://github.com/gokercebeci/contextmenu/issues",
+    "homepage": "http://gokercebeci.com/dev/contextmenu",
+    "docs": "https://github.com/gokercebeci/contextmenu",
+    "download": "http://gokercebeci.com/dev/contextmenu",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
