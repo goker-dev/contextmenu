@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <title>contextmenu</title>
         <meta name="description" content="contextmenu is a context menu (right click menu) jQuery plugin." />
         <meta name="keywords" content="contextmenu, context menu, right click menu, jquery context, jquery plugin" />
@@ -39,10 +39,10 @@
                 <h2>SAMPLE</h2>
                 <!-- description -->
                 <div class="desc">
-                    <h1>jQuery CONTEXTMENU v1.1.0</h1>
+                    <h1>jQuery Context Menu v1.1.1</h1>
                     <hr>
                     <p><b>contextmenu</b> is a context menu (right click menu) jQuery plugin.</p>
-                    <p>I developed it to use on my <a href="http://uygulama.net" title="uygulama">Uygulama</a> project's new version.</p>
+                    <p>I developed it to use on my <a href="http://basepart.org" title="basepart">basepart</a> project.</p>
                     <p>I've only tested it on</p>
                     <ul>
                         <li><b>Chromium (14.0.835.202)</b>, </li>
@@ -59,9 +59,6 @@
                     <p class="signature"><a href="https://github.com/gokercebeci/contextmenu">
                             <img src="http://geticon.org/of/github.com" alt="github" />
                             download or fork it on github</a></p>
-                    <p class="signature"><a href="http://plugins.jquery.com/project/contextmenu">
-                            <img src="http://geticon.org/of/jquery.com" alt="jquery" />
-                            jquery plugin page</a></p>
                 </div>
                 <!-- /decription -->
 
@@ -81,7 +78,7 @@
                     <div class="clearfix"></div>
                 </div>
 
-                <script src="contextmenu.js"></script>
+                <script src="jquery.contextmenu.js"></script>
                 <link rel="stylesheet" href="contextmenu.css" />
                 <script>
                     $('.menu-area').contextmenu({
@@ -120,12 +117,13 @@
             <section>
                 <h2>USAGE</h2>
                 <code>
-                    &lt;script src="contextmenu.js"&gt&lt;/script&gt;<br/>
+                    &lt;script src="jquery.contextmenu.js"&gt&lt;/script&gt;<br/>
                     &lt;link rel="stylesheet" href="contextmenu.css" /&gt;<br/>
                     &lt;script&gt;<br/>
                     &nbsp;&nbsp;$(document).contextmenu({<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;menu: {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'custom link' : 'http://...'<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'custom link 1' : 'http://...',<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'custom link 2' : 'http://...'<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
                     &nbsp;&nbsp;});<br/>
                     &lt;/script&gt;
@@ -137,13 +135,13 @@
             <section>
                 <h2>OPTIONS</h2>
                 <pre>
-                    init   : Optional init function.
-                    start  : Optional start function
-                    finish : Optional finish function.
-                    ctrl   : Contect menu disable. If you right click with ctrl key 
-                             the contect menu do not show. [true,false] Default value is true;
-                    style  : Optional class name.
-                    menu   : Required menu object.
+                    init   : function(){}, // Optional init function.
+                    start  : function(){}, // Optional start function
+                    finish : function(){}, // Optional finish function.
+                    ctrl   : false, // Default false. Optional. If you right click with ctrl key 
+                    the contect menu do not show. [true,false] Default value is true;
+                    style  : 'dark', // Optional class name.
+                    menu   : {}  // Required menu object.
                 </pre>
             </section>
             <!-- /OPTIONS -->
