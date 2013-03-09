@@ -3,7 +3,7 @@ contextmenu
 
 **contextmenu** is a **jQuery** plug-in for context menu (right click menu).
  
-You can change image size and quality with plugin [**options**](#options) easily.
+You can change manu style with plugin [**options**](#options) easily.
 
 ### Tested on: 
  *  Chromium (14.0.835.202), 
