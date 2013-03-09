@@ -3,7 +3,7 @@ contextmenu
 
 **contextmenu** is a **jQuery** plug-in for context menu (right click menu).
  
-You can change manu style with plugin [**options**](#options) easily.
+You can change menu style with plugin [**options**](#options) easily.
 
 ### Tested on: 
  *  Chromium (14.0.835.202), 
@@ -34,7 +34,7 @@ Options
     init   : function(){}, // Optional init function.
     start  : function(){}, // Optional start function
     finish : function(){}, // Optional finish function.
-    ctrl   : false, // Default false. Optional. If you right click with ctrl key 
+    ctrl   : false, // Optional. If you right click with ctrl key 
     the contect menu do not show. [true,false] Default value is true;
     style  : 'dark', // Optional class name.
     menu   : {}  // Required menu object.
