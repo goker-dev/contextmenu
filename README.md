@@ -12,7 +12,7 @@ You can change image size and quality with plugin [**options**](#options) easily
  *  Opera (11.52) 
  *  Internet Explorer (8.0.6001)
 
-You can check it on [gokercebeci.com/dev/canvasresize](http://gokercebeci.com/dev/canvasresize).
+You can check it on [gokercebeci.com/dev/contextmenu](http://gokercebeci.com/dev/contextmenu).
 
 Usage
 -----
@@ -41,9 +41,7 @@ Options
 
 License
 -------
-It is under [MIT License](https://github.com/gokercebeci/canvasResize/blob/master/LICENCE.md "MIT License") 
-and It requires **binaryajax.js** and **exif.js** (or **jQuery EXIF**)
-to work which is also under the [MPL License](http://www.nihilogic.dk/licenses/mpl-license.txt)
+It is under [MIT License](https://github.com/gokercebeci/contextmenu/blob/master/LICENCE.md "MIT License").
 
 Developer
 ---------
